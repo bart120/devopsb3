@@ -2,7 +2,12 @@ node {
     def mvnHome = tool 'maven-3.5.2'
 
     stage('Wich java'){
-        sh 'java --version'
+        tools {
+            jdk "JDK"
+        }
+        steps{
+            sh 'java --version'
+        }
     }
 
     stage('Clone repo'){
