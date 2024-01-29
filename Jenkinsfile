@@ -1,9 +1,7 @@
 node {
     def mvnHome = tool 'maven-3.5.2'
-    tools {
-            jdk "JDK"
-    }
-    stages{
+    
+    
         stage('Wich java'){
             sh 'java --version'
         }
@@ -15,6 +13,6 @@ node {
         stage('Build project'){
             sh "'${mvnHome}/bin/mvn' -X -B -DskipTests clean package"
         }
-    }
+    
 
 }
