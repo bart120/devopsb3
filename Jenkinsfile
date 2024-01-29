@@ -6,7 +6,7 @@ node {
     }
 
     stage('Build project'){
-        sh "'${mvnHome}/bin/mvn' -B -DskipTests clean package"
+        sh "'${mvnHome}/bin/mvn' -X -B -DskipTests clean package"
     }
 
 
