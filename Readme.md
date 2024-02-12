@@ -14,8 +14,9 @@ Charger sur la branche "dev" les fichiers du projet demo
 ## Compilation
 
 Créer un job jenkins qui récupère le projet sur le repo GIT et démarre une compilation via maven.
+
 Ce job doit:
-- Vérifier de le projet compile
+- Vérifier que le projet compile
 - Ne lance pas de tests
 - Publie la javadoc
 - Se lance toute les 3 min si changement du SCM
@@ -27,19 +28,22 @@ Créer plusieurs tests quelques méthodes simples de calcul.
 - Integer add(integer a, integer b)
 - Integer multi(integer a, integer b)
 - Integer div(integer a, integer b)
-Dans un nouveau job Jenkins
-Vérifier que la compilation et les tests sont passants.
-Modifier un test de manière à la faire échouer.
-Vérifier que la compilation fonctionne et que le test remonte en KO.
-Ignorer le tes via Maven de façon à obtenir un build correct.
-Publier le rapport de tests
+Dans un nouveau job Jenkins :
+- Vérifier que la compilation et les tests sont passants.
+- Modifier un test de manière à la faire échouer.
+- Vérifier que la compilation fonctionne et que le test remonte en KO.
+- Ignorer le test via Maven de façon à obtenir un build correct.
+- Publier le rapport de tests
 
 
 ## SONAR
 
-Installer SonarQube (docker compose)
+Installer SonarQube (docker compose) ou utiliser la version en ligne.
+
 Lancer un SonarScanner sur le projet via jenkins en créant un nouveau job.
+
 Parcourir le tableau de bord
+
 Modifier le projet de façon à faire varier les indicateurs et relancer une analyse:
 - Tests
 - Duplication
