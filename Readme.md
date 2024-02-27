@@ -56,7 +56,7 @@ Le projet est a faire seul.
 
 # Rendu
 
-Le rendu se fera le 27 février à 23h59 maxi.
+Le rendu se fera le 3 mars à 23h59 maxi.
 Toute absence de rendu entrainera un 0 (ZERO) pour le membre.
 
 Le rendu s'effectu via un repos GIT ou SVN. L'adresse du rendu est envoyé par mail.
